@@ -1,0 +1,92 @@
+/* Connexion.css */
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  /*padding: 0 50px;*/
+  color: #00692f;
+  background-color: #fdc500;
+ 
+}
+
+.logo-container {
+  width: 50%;
+  text-align: center;
+}
+
+.animated-logo {
+  width: 300px;
+  height: auto;
+  animation: zoomIn 1.5s ease-in-out;
+}
+
+.form-section {
+  width: 50%;
+
+  
+}
+h3{
+  margin-bottom: -2%;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Ajout de l'animation de fondu */
+  
+}
+
+.switch-button {
+  background: none;
+  border: none;
+  color: green;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*.button-spacing {
+  margin-right: 10px;
+  color: black;
+  
+}*/
+
+form button {
+  padding: 10px 15px;
+  background-color:#fdc500;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.9s ease, transform 0.2s ease; /* Transition avec effet de survol */
+  margin-top: 3px;
+}
+
+
+
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+/* Appliquez l'animation à l'élément du logo */
+.logo {
+  animation: zoomIn 1s ease-in-out forwards; /* Ajustez la durée selon vos besoins */
+}
+
